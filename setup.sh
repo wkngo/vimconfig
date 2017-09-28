@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 vundleDirectory="~/.vim/bundle/Vundle.vim"
 
 # checking if Vundle.vim exists
@@ -10,10 +9,10 @@ else
 	echo "Directory already exists"
 fi
 
-mv ./vimrc ~/.vimrc
-mv ./vim ~/.vim
+cp -r ./vimrc ~/.vimrc
+echo "Copied vimrc to ~/.vimrc"
 
+cp -r ./vim ~/.vim
+echo "Copied vim to ~./vim"
 
-
-
-
+echo "Finished setting up vim config"
