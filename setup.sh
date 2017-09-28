@@ -1,10 +1,13 @@
 #!/bin/bash
 
-cp -r ./vimrc ~/.vimrc
-echo "Copied vimrc to ~/.vimrc"
+cp -r ./vimrc "${HOME}/.vimrc"
+echo "Copied vimrc to ${HOME}/.vimrc"
 
-cp -r ./vim ~/.vim
-echo "Copied vim to ~./vim"
+cp -r ./vim ${HOME}
+echo "Copied vim to ${HOME}"
+
+mv ${HOME}/vim ${HOME}/.vim
+echo "Renaming vim to .vim"
 
 echo "Installing Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
