@@ -14,6 +14,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
+
+" JAVASCRIPT PLUGINS
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'marijnh/tern_for_vim'
