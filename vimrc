@@ -63,7 +63,7 @@ let g:ctrlp_pax_depth=40
 " Ale Settings
 
 
-let ale_linters = {
-   'javascript': ['eslint']
-}
+let g:ale_linters = {
+\   'javascript': ['eslint']
+\}
 
