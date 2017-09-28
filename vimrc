@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'                 " Async lint checker
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
@@ -59,7 +60,10 @@ set backspace=2 "
 let g:ctrlp_max_files=0
 let g:ctrlp_pax_depth=40
 
-" syntastic eslint
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+" Ale Settings
+
+
+let ale_linters = {
+   'javascript': ['eslint']
+}
 
