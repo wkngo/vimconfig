@@ -16,6 +16,7 @@ Plugin 'w0rp/ale'                 " Async lint checker
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
 
 " JAVASCRIPT PLUGINS
 Plugin 'pangloss/vim-javascript'
