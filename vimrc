@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " MY PLUGINS
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic' " is this if vim is < 8.0 
 Plugin 'w0rp/ale'                 " Async lint checker
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
