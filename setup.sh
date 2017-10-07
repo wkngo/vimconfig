@@ -6,7 +6,7 @@ echo "Copied vimrc to ${HOME}/.vimrc"
 cp -r ./vim ${HOME}
 echo "Copied vim to ${HOME}"
 
-mv ${HOME}/vim ${HOME}/.vim
+cp -r ${HOME}/vim ${HOME}/.vim
 echo "Renaming vim to .vim"
 
 echo "Installing Vundle"
