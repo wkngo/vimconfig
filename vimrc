@@ -44,6 +44,7 @@ set runtimepath^=~/.vim/plugin
 colorscheme molokai
 set ruler
 set number
+set colorcolumn=80
 syntax on
 
 " TAB 2 SPACE
