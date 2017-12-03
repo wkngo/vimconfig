@@ -1,51 +1,44 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
-" MY PLUGINS
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-" Plugin 'vim-syntastic/syntastic' " is this if vim is < 8.0 
-Plugin 'w0rp/ale'                 " Async lint checker
+Plugin 'w0rp/ale'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
-
-" JAVASCRIPT PLUGINS
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'marijnh/tern_for_vim'
+
+" PLUGIN SETTINGS
+" CTRL-P
+let g:ctrlp_max_files=0
+let g:ctrlp_pax_depth=40
+
+" ALE 
+let g:ale_linters = { 'javascript': ['eslint'] }
+
+" NERDTree
+let NERDTreeShowHidden=1  " enable hidden files
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-" VIM SCRIPTS
-set runtimepath^=~/.vim/plugin
-
-" BLAH
 colorscheme molokai
+
+set runtimepath^=~/.vim/plugin
+syntax on
 set ruler
 set number
 set colorcolumn=80
-syntax on
 
 " TAB 2 SPACE
 set tabstop=2
@@ -53,19 +46,8 @@ set softtabstop=0
 set expandtab
 set shiftwidth=2
 set smarttab
+colorscheme molokai
 
 " Fix backspace
 set backspace=indent,eol,start
-set backspace=2 "
-
-" CTRL-P Settings
-let g:ctrlp_max_files=0
-let g:ctrlp_pax_depth=40
-
-" Ale Settings
-
-
-let g:ale_linters = {
-\   'javascript': ['eslint']
-\}
-
+set backspace=2
