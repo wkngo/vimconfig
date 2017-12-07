@@ -46,7 +46,6 @@ set softtabstop=0
 set expandtab
 set shiftwidth=2
 set smarttab
-colorscheme molokai
 
 " Fix backspace
 set backspace=indent,eol,start
