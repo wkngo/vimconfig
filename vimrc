@@ -16,6 +16,7 @@ Plugin 'bling/vim-airline'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'sjl/badwolf'
 
 " PLUGIN SETTINGS
 " CTRL-P
@@ -32,7 +33,7 @@ let NERDTreeShowHidden=1  " enable hidden files
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-colorscheme molokai
+colorscheme badwolf
 
 set runtimepath^=~/.vim/plugin
 syntax on
@@ -46,7 +47,6 @@ set softtabstop=0
 set expandtab
 set shiftwidth=2
 set smarttab
-colorscheme molokai
 
 " Fix backspace
 set backspace=indent,eol,start
