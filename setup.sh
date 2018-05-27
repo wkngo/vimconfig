@@ -12,9 +12,9 @@ echo "Renaming vim to .vim"
 echo "Installing Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-echo "Finished setting up vim config"
-echo "Type ':PluginInstall' inside vim"
-echo "Type ':GoInstallBinaries' to install binaries for vim-go plugin"
+vim -c "PluginInstall" \
+  -c "GoInstallBinaries" \
+  -c "qa!"
 
 echo "Installing i3"
 mkdir -p "$HOME/.config" && cp -r ./i3 $_
