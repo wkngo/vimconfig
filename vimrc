@@ -7,7 +7,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-vinegar'
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -54,3 +54,5 @@ set smarttab
 " Fix backspace
 set backspace=indent,eol,start
 set backspace=2
+
+map <C-P> :Files <CR>
