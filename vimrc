@@ -1,6 +1,7 @@
 set nocompatible
 filetype off
 
+set rtp+=~/.fzf
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -14,6 +15,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'sjl/badwolf'
+Plugin 'junegunn/fzf.vim'
 
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
