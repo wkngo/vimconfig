@@ -1,5 +1,6 @@
 # Requirements
 # feh
+# compton
 # spotify (cmd)
 
 # mod key
@@ -121,7 +122,7 @@ gaps outer 0
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command i3status ~/.i3status.conf
+  status_command ~/.config/i3/bar.sh
   colors {
     background          $bg-color
     separator           #757575
@@ -141,6 +142,5 @@ for_window [class="^.*"] border pixel 0
 for_window [class="Spotify"] move to workspace $ws10
 
 exec spotify
-exec_always feh --bg-scale /home/william/wallpaper.jpg
-
-# status bar
+exec_always compton -bcCGf -i 0.8 -e 0.8 --no-fading-openclose --sw-opti
+exec_always feh --bg-scale /home/william/.wallpaper.jpg
