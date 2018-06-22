@@ -36,7 +36,7 @@ let NERDTreeShowHidden=1  " enable hidden files
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-colorscheme badwolf
+colorscheme molokai
 
 set runtimepath^=~/.vim/plugin
 syntax on
