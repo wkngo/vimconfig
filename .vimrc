@@ -13,28 +13,19 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
-Plugin 'marijnh/tern_for_vim'
-Plugin 'sjl/badwolf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'jremmen/vim-ripgrep'
 
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'fatih/vim-go'
 
-" PLUGIN SETTINGS
-" CTRL-P
-let g:ctrlp_max_files=0
-let g:ctrlp_pax_depth=40
+call vundle#end()
+filetype plugin indent on
 
+" PLUGIN SETTINGS
 " ALE 
 let g:ale_linters = { 'javascript': ['eslint'] }
-
-" NERDTree
-let NERDTreeShowHidden=1  " enable hidden files
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 colorscheme molokai
 
@@ -55,4 +46,18 @@ set smarttab
 set backspace=indent,eol,start
 set backspace=2
 
+" line numbering and scrolling
+function! ToggleNumbers()
+    if (&relativenumber == 1)
+        set number
+        set norelativenumber
+    else
+        set number
+        set relativenumber
+    endif
+endfunction
+
 map <C-P> :Files <CR>
+map <C-L> :Rg 
+nmap ]b :bn <CR>
+nmap [b :bp <CR>
