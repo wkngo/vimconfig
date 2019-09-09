@@ -1,4 +1,5 @@
 set nocompatible
+set nocompatible
 filetype off
 
 set rtp+=~/.fzf
@@ -16,6 +17,7 @@ Plugin 'bling/vim-airline'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'sjl/badwolf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'kien/ctrlp.vim'
 
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
@@ -36,7 +38,7 @@ let NERDTreeShowHidden=1  " enable hidden files
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-colorscheme badwolf
+colorscheme molokai
 
 set runtimepath^=~/.vim/plugin
 syntax on
@@ -55,4 +57,5 @@ set smarttab
 set backspace=indent,eol,start
 set backspace=2
 
-map <C-P> :Files <CR>
+map <C-0> :Files <CR>
+map <C-P> :CtrlP <CR>
